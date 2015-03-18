@@ -1,6 +1,7 @@
 $font: News Cycle, sans-serif;
 $ink: #212162;
 $paper: #FFFFFD;
+$contrast: #7AA88C;
 
 body {
 	height: 100%;
@@ -133,36 +134,65 @@ blockquote {
 }
 
 /* Element styles */
+
+body { 
+  background: url("http://i.imgur.com/aeCctAd.png") repeat-y left top fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-origin: border-box;
+}
+
 h2 {
 	text-align: center;
 }
 
-/* Classes */
-.background {
-    background-image: url("http://i.imgur.com/aeCctAd.png");
-    background-repeat: repeat-y;
-	height: 100%;
+li {
+    list-style-type: none;
 }
 
-.clickBox span {
+/* Classes */
+
+.clickBox i {
 	font-size: 3em;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
+	color: $contrast;
+}
+
+.clickBoxHolder {
+	padding: 3em
+}
+
+.col-sm-2 i {
+    display:block;
+    text-align:center
+}
+
+.ink {
+	color: $ink;
 }
 
 .navbar-brand img {
 	height: 100%;
 }
 
+.navbar-nav li a {
+	color: $ink
+}
+
 .navbar-default {
 	background: none;
+	color: $ink;
 }
 
 /* IDs */
-#container {
-  background-image: url("http://i.imgur.com/GMa2Psw.png");
-  background-repeat: repeat-y; 
-  min-height: 100%;
+
+#content {
+	padding:10px;
+	padding-bottom:80px;   /* Height of the footer element */
 }
 
 #footer {
@@ -179,13 +209,13 @@ h2 {
 	min-width: 10em;
 }
 
+#navbar a {
+	color: $ink;
+}
+
 /* This stuff isn't worked in properly yet */
 #wrapper {
 	min-height:100%;
 	position:relative;
 }
 
-#content {
-	padding:10px;
-	padding-bottom:80px;   /* Height of the footer element */
-}
