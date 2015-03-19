@@ -2,6 +2,7 @@ $font: News Cycle, sans-serif;
 $ink: #212162;
 $paper: #FFFFFD;
 $contrast: #7AA88C;
+$radius: 2em;
 
 body {
 	height: 100%;
@@ -171,6 +172,14 @@ li {
     text-align:center
 }
 
+.content {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border: 1px solid $contrast;
+	padding: 1em;
+}
+	
 .ink {
 	color: $ink;
 }
@@ -187,6 +196,14 @@ li {
 	background: none;
 	color: $ink;
 }
+
+.webDesignBubble {
+	position: absolute;
+	background-color: $ink;
+	color: $contrast;
+	border-radius: $radius;
+	padding: 1em;
+	}
 
 /* IDs */
 
@@ -214,8 +231,8 @@ li {
 }
 
 /* This stuff isn't worked in properly yet */
+
 #wrapper {
 	min-height:100%;
 	position:relative;
 }
-

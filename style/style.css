@@ -121,6 +121,13 @@ li {
   display: block;
   text-align: center; }
 
+.content {
+  border-radius: 2em;
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border: 1px solid #7AA88C;
+  padding: 1em; }
+
 .ink {
   color: #212162; }
 
@@ -133,6 +140,13 @@ li {
 .navbar-default {
   background: none;
   color: #212162; }
+
+.webDesignBubble {
+  position: absolute;
+  background-color: #212162;
+  color: #7AA88C;
+  border-radius: 2em;
+  padding: 1em; }
 
 /* IDs */
 #content {
