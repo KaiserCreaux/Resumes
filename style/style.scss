@@ -179,6 +179,11 @@ li {
 	border: 1px solid $contrast;
 	padding: 1em;
 }
+
+.heroImage img {
+	width:100%;
+	height:auto;
+}
 	
 .ink {
 	color: $ink;
@@ -195,6 +200,10 @@ li {
 .navbar-default {
 	background: none;
 	color: $ink;
+}
+
+.quote h4{
+    font-weight: 700;
 }
 
 .webDesignBubble {

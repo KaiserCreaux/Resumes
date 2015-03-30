@@ -128,6 +128,10 @@ li {
   border: 1px solid #7AA88C;
   padding: 1em; }
 
+.heroImage img {
+  width: 100%;
+  height: auto; }
+
 .ink {
   color: #212162; }
 
@@ -140,6 +144,9 @@ li {
 .navbar-default {
   background: none;
   color: #212162; }
+
+.quote h4 {
+  font-weight: 700; }
 
 .webDesignBubble {
   position: absolute;
