@@ -107,6 +107,22 @@ li {
   list-style-type: none; }
 
 /* Classes */
+.circular {
+  width: 15em;
+  height: 15em;
+  border-radius: 20em;
+  -webkit-border-radius: 20em;
+  -moz-border-radius: 20em;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-transition: border 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: border 1s; }
+
+.circular:hover {
+  border: 1em solid #212162; }
+
 .clickBox i {
   font-size: 3em;
   margin-left: auto;
@@ -134,6 +150,32 @@ li {
 
 .ink {
   color: #212162; }
+
+.introBox {
+  display: inline;
+  min-height: 25em; }
+
+.introBox h2 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+  font-size: 6em; }
+
+.introClear {
+  clear: both;
+  height: 2em; }
+
+.introDesign {
+  float: right;
+  background: url(http://i.imgur.com/Uf0SaZQ.png) no-repeat; }
+
+.introResumes {
+  float: right;
+  background: url(http://i.imgur.com/m3O0AAv.png) no-repeat; }
+
+.mContent {
+  padding: 2em; }
 
 .navbar-brand img {
   height: 100%; }
