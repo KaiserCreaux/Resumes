@@ -20,7 +20,10 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     font-size: 1.6em;
     /* equivalent to 16px */
     line-height: 1.375;
-    /* equivalent to 22px */ } }
+    /* equivalent to 22px */ }
+
+  .spacerSM {
+    padding-top: 2em; } }
 h1 {
   font-size: 2em;
   /* 2x body copy size = 32px */
@@ -108,6 +111,7 @@ li {
 
 /* Classes */
 .circular {
+  position: absolute;
   width: 15em;
   height: 15em;
   border-radius: 20em;
@@ -121,7 +125,7 @@ li {
   transition: border 1s; }
 
 .circular:hover {
-  border: 1em solid #212162; }
+  border: 0.2em solid #212162; }
 
 .clickBox i {
   font-size: 3em;
@@ -144,9 +148,17 @@ li {
   border: 1px solid #7AA88C;
   padding: 1em; }
 
+.familyPhoto {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+
 .heroImage img {
-  width: 100%;
-  height: auto; }
+  width: 30%;
+  height: auto;
+  align: right; }
 
 .ink {
   color: #212162; }
@@ -160,7 +172,9 @@ li {
   top: 50%;
   transform: translateY(-50%);
   float: left;
-  font-size: 6em; }
+  font-size: 6em;
+  margin-top: 3em;
+  margin-left: 3em; }
 
 .introClear {
   clear: both;
@@ -170,9 +184,17 @@ li {
   float: right;
   background: url(http://i.imgur.com/Uf0SaZQ.png) no-repeat; }
 
+.introDesignTag {
+  font-family: 'Vollkorn', serif;
+  color: #FE9A2E;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+
 .introResumes {
   float: right;
   background: url(http://i.imgur.com/m3O0AAv.png) no-repeat; }
+
+.introWelcome {
+  font-family: "Ubuntu"; }
 
 .mContent {
   padding: 2em; }
