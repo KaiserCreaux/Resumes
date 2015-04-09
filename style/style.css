@@ -9,6 +9,10 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   font-size-adjust: 0.5; }
 
 /* Media Queries/Sizes */
+@media (max-width: 767px) {
+  /*Removes overflow issue from navbar in small views */
+  #webDesignBubble {
+    display: none; } }
 #container {
   font-size: 1.6em;
   /* equivalent to 16px */
@@ -106,14 +110,19 @@ body {
 h2 {
   text-align: center; }
 
+i {
+  color: #7AA88C; }
+
 li {
   list-style-type: none; }
 
 /* Classes */
 .circular {
-  position: absolute;
+  margin-top: 1.2em;
   width: 15em;
   height: 15em;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 20em;
   -webkit-border-radius: 20em;
   -moz-border-radius: 20em;
@@ -146,7 +155,8 @@ li {
   -moz-border-radius: 2em;
   -webkit-border-radius: 2em;
   border: 1px solid #7AA88C;
-  padding: 1em; }
+  padding: 1em;
+  text-align: center; }
 
 .familyPhoto {
   max-width: 100%;
@@ -165,23 +175,14 @@ li {
 
 .introBox {
   display: inline;
-  min-height: 25em; }
+  min-height: 25em;
+  text-align: center; }
 
 .introBox h2 {
-  position: relative;
   top: 50%;
-  transform: translateY(-50%);
-  float: left;
-  font-size: 6em;
-  margin-top: 3em;
-  margin-left: 3em; }
-
-.introClear {
-  clear: both;
-  height: 2em; }
+  font-size: 6em; }
 
 .introDesign {
-  float: right;
   background: url(http://i.imgur.com/Uf0SaZQ.png) no-repeat; }
 
 .introDesignTag {
@@ -190,7 +191,6 @@ li {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
 
 .introResumes {
-  float: right;
   background: url(http://i.imgur.com/m3O0AAv.png) no-repeat; }
 
 .introWelcome {
@@ -212,12 +212,18 @@ li {
 .quote h4 {
   font-weight: 700; }
 
+.quoteEmphasis {
+  color: #7AA88C; }
+
 .webDesignBubble {
   position: absolute;
   background-color: #212162;
   color: #7AA88C;
   border-radius: 2em;
   padding: 1em; }
+
+.webDesignBubble:hover {
+  color: #ffc489; }
 
 /* IDs */
 #content {

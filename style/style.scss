@@ -3,7 +3,7 @@ $ink: #212162;
 $paper: #FFFFFD;
 $contrast: #7AA88C;
 $radius: 2em;
-
+$excite: #ffc489;
 
 body {
 	height: 100%;
@@ -18,6 +18,11 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 /* Media Queries/Sizes */
+@media (max-width: 767px) { /*Removes overflow issue from navbar in small views */
+    #webDesignBubble {
+		display:none;
+   }
+}
 
 #container {
   font-size: 1.6em;
@@ -152,15 +157,21 @@ h2 {
 	text-align: center;
 }
 
+i {
+	color: $contrast;
+}
+
 li {
     list-style-type: none;
 }
 
 /* Classes */
 .circular {
-	position: absolute;
+	margin-top: 1.2em;
 	width: 15em;
 	height: 15em;
+	margin-left:auto;
+	margin-right:auto;
 	border-radius: 20em;
 	-webkit-border-radius: 20em;
 	-moz-border-radius: 20em;
@@ -198,6 +209,7 @@ li {
 	-webkit-border-radius: $radius;
 	border: 1px solid $contrast;
 	padding: 1em;
+	text-align: center;
 }
 
 .familyPhoto {
@@ -221,25 +233,15 @@ li {
 .introBox {
 	display: inline;
 	min-height: 25em;
+	text-align: center;
 }
 
 .introBox h2 {
-	position: relative;
 	top: 50%;
-	transform: translateY(-50%);
-	float: left;
 	font-size: 6em;
-	margin-top: 3em;
-	margin-left: 3em;
-}
-
-.introClear {
-	clear: both;
-	height: 2em;
 }
 
 .introDesign {
-	float: right;
 	background: url(http://i.imgur.com/Uf0SaZQ.png) no-repeat;
 }
 
@@ -250,12 +252,7 @@ li {
 }
 
 .introResumes {
-	float: right;
 	background: url(http://i.imgur.com/m3O0AAv.png) no-repeat;
-}
-
-.introResumesTag {
-	
 }
 
 .introWelcome {
@@ -283,6 +280,10 @@ li {
     font-weight: 700;
 }
 
+.quoteEmphasis {
+	color: $contrast;
+	}
+
 .webDesignBubble {
 	position: absolute;
 	background-color: $ink;
@@ -291,6 +292,10 @@ li {
 	padding: 1em;
 	}
 
+.webDesignBubble:hover {
+	color: $excite;
+	}
+	
 /* IDs */
 
 #content {
