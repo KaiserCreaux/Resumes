@@ -195,12 +195,18 @@ li {
 }
 
 .clickBoxHolder {
-	padding: 3em
+	padding: 3em;
+}
+
+.clickBoxHolder:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .col-sm-2 i {
     display:block;
-    text-align:center
+    text-align:center;
 }
 
 .content {
